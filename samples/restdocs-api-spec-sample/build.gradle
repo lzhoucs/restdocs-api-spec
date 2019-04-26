@@ -70,3 +70,12 @@ postman {
 	version = '0.1.0'
 	baseUrl = 'https://localhost:8080'
 }
+
+task myTest(type: Test) {
+	group = 'verification'
+	description = 'Run only tests tagged with `my-test`'
+
+	useJUnitPlatform {
+		includeTags 'my-test'
+	}
+}
