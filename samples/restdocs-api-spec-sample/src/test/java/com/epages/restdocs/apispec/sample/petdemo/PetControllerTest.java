@@ -43,7 +43,7 @@ public class PetControllerTest
                 ResourceSnippetParameters.builder()
                     .description("Create a cat")
                     .requestFields(
-                        fieldWithPath("petType").description("Type discriminator. Possible value: 'dog', 'cat'"),
+                        fieldWithPath("petType").description("cat"),
                         fieldWithPath("name").description("Name of cat"),
                         fieldWithPath("catProp").description("A cat specific property")
                     )
@@ -67,7 +67,7 @@ public class PetControllerTest
                 ResourceSnippetParameters.builder()
                     .description("Create a dog")
                     .requestFields(
-                        fieldWithPath("petType").description("Type discriminator. Possible value: 'dog', 'cat'"),
+                        fieldWithPath("petType").description("dog"),
                         fieldWithPath("name").description("Name of dog"),
                         fieldWithPath("dogProp").description("A dog specific property")
                     )
